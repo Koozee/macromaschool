@@ -97,21 +97,20 @@ try {
             $request->file('imageuser')->move('imguser/', $request->file('imageuser')->getClientOriginalName());
             // Perbarui kolom "foto" dengan nama file
             DB::table('users')
-                ->where('id', $id) // Anggap "nim" adalah pengidentifikasi unik
+                ->where('id', $id) // Anggap "id" adalah pengidentifikasi unik
                 ->update(['imageuser' => $request->file('imageuser')->getClientOriginalName()]);
         }
 
         return redirect()->back()->with(
-            'alert',
+            'success',
             'Data Berhasil Diperbarui'
         );
     } else {
-        return redirect()->back()->with('alert', 'Gagal update data');
+        return redirect()->back()->with('fail', 'Gagal update data');
     }
 } 
 } catch (\Exception $e) {
-    dd($e);
-    return redirect()->back()->with('alert', 'Gagal update data');
+    return redirect()->back()->with('fail', 'Gagal update data');
 }
 
     }

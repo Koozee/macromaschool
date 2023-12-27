@@ -10,8 +10,8 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <main class="flex ">
-        <div class="container  h-screen">
+    <main class="flex">
+        <div class="container h-screen">
             <img src="{{url('img/loginlogo.svg')}}" alt="logologin">
         </div>
         <div class="container p-5">
