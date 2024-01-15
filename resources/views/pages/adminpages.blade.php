@@ -19,7 +19,7 @@
                 <h1 class="text-white text-xl font-semibold">Macroma School Admin</h1>
             </div>
             <div class="flex items-center space-x-4">
-                <span class="text-white">Bienvenido</span>
+                <span class="text-white">Koozee</span>
                 <i class="fas fa-user-circle text-white text-2xl"></i>
             </div>
         </nav>

@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('email')->unique();
             $table->string('name');
-            $table->string('borndate');
-            $table->string('notel', 12)->unique();
+            $table->string('borndate')->nullable();
+            $table->string('notel', 12)->unique()->nullable();
             $table->string('imageuser')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
+            $table->string('google_id')->nullable();
             $table->timestamps();
         });
     }

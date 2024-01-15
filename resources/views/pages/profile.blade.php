@@ -2,7 +2,7 @@
 @section('contentuser')
     <main class="mt-5 p-4">
         <div class="container text-center mx-auto max-w-3xl">
-            <h1 class="text-2xl font-bold py-2">Welcome, <span>Niko Achmad</span>!</h1>
+            <h1 class="text-2xl font-bold py-2">Welcome, <span>{{ $name }}</span>!</h1>
             <h2 class="text-xl font-normal py-2">Informasi tentang profil serta preferensi Anda di semua layanan yang
                 disediakan oleh Macroma School.</h2>
         </div>
